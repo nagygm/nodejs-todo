@@ -9,17 +9,14 @@ module.exports = function (app) {
      * Main page
      */
     app.get('/',
-            mainRedirectMW(),
-            renderMW()
+            mainRedirectMW()
     );
 
     /**
      * Login page
      */
     app.use('/login',
-            authMW(),
-            checkUserLoginMW(),
-            renderMW()
+            renderMW('login')
     );
 
     /**

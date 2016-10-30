@@ -8,7 +8,7 @@
   },
   "author": "Nagy Gergo Mihaly",
   "license": "ISC",
-  "devDependencies": {
+  "dependencies": {
     "gulp": "^3.9.1",
     "ejs": "^2.5.2"
   },

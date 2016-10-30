@@ -1,0 +1,23 @@
+<%- include('_header') %>
+<%- include('_menu') %>
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12">
+
+            <%todos.forEach( function(todo){ %>
+                <% if(todo.opened) { %>
+                    <%- include('_todoDetails.ejs',todo) %>
+                <% } else { %>
+                    <%- include('_todoClosed.ejs',todo) %>
+                <% }%>
+            <% }); %>
+
+            <%# modals%>
+            <%- include('_todolistCreate.ejs') %>
+            <%- include('_todoListDelete.ejs') %>
+            <%- include('_todolistUpdate.ejs') %>
+            <%- include('_shareSettings.ejs') %>
+        </div>
+    </div>
+</div>
+<%- include('_footer') %>
