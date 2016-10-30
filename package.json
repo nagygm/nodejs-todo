@@ -1,0 +1,20 @@
+{
+  "name": "gijtn9_collab_todo",
+  "version": "1.0.0",
+  "description": "Simple collaborative TODO list demo",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Nagy Gergo Mihaly",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "ejs": "^2.5.2"
+  },
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nagygm/nodejs-todo.git"
+  }
+}
